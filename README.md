@@ -15,7 +15,7 @@ To customize this to your own needs I suggest changing this line indicating on w
 ```
 // @match        https://wrc.intersystems.com/wrc/*
 ```
-and modify the javascript code. Some hints to do this: 
+and modify the javascript code to your needs. Some hints to do this: 
 
 ```
 if (url.indexOf("https://wrc.intersystems.com/wrc/ProblemView.csp?OBJID=")>-1) {
@@ -25,3 +25,6 @@ if (url.indexOf("https://wrc.intersystems.com/wrc/ProblemView.csp?OBJID=")>-1) {
     ...
 ```
 
+The first line in the code checks if the URL has a certain patter.  
+The second line replaces one string of the URL with another.  
+The thrid line uses the modified string as the new url. The browser will switch to that url location. 
