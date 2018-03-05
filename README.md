@@ -28,3 +28,5 @@ if (url.indexOf("https://wrc.intersystems.com/wrc/ProblemView.csp?OBJID=")>-1) {
 The first line in the code checks if the URL has a certain patter.  
 The second line replaces one string of the URL with another.  
 The thrid line uses the modified string as the new url. The browser will switch to that url location. 
+
+You can use more convoluted logic to do this for other URL patters, as I did in my code. 
