@@ -12,13 +12,13 @@ This script is active on sites of your choice (refer to Tampermonkey's @match va
 ### Customize it
 To customize this to your own needs I suggest changing this line indicating on what sites the script will be active: 
 ```
-// @match        https://wrc.intersystems.com/wrc/*
+// @match        https://www.yoursite.com/path/*
 ```
 and modify the javascript code to your needs. Some hints to do this: 
 
 ```
-if (url.indexOf("https://wrc.intersystems.com/wrc/ProblemView.csp?OBJID=")>-1) {
-        url = url.replace("ProblemView","Problem");
+if (url.indexOf("https://www.yoursite.com/path/SomePathSkipIt.csp?Param=")>-1) {
+        url = url.replace("SomePathSkipIt","SomePath");
         window.location.href = url;
     }
     ...
