@@ -1,6 +1,6 @@
 # IS-ports
 
-### What
+### Description
 This script can be added as a TemperMonkey extension to Chrome or Firefox. It can be used as a template to allow you to automatically redirect your browser to some site when you land on some pages. 
 
 ### Why
